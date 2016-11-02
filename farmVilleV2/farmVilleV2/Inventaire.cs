@@ -12,14 +12,20 @@ namespace farmVilleV2
 {
     public partial class Inventaire : Form
     {
+        int Argent;
+        int Ble;
+
         public Inventaire()
         {
             InitializeComponent();
         }
 
-        private void btnCheatInventaire_Click(object sender, EventArgs e)
+        private void Inventaire_Load(object sender, EventArgs e)
         {
-            
+            Argent = frmFarmVille.Argent;
+            lblArgentInventaire.Text = Argent.ToString();
+            Ble = frmFarmVille.Ble;
+            lblBleInventaire.Text = Ble.ToString();
         }
     }
 }
