@@ -99,14 +99,7 @@ namespace farmVilleV2
 
         private void btnPlusBle1_Click(object sender, EventArgs e)
         {
-            if(Argent >= 50)
-            {
-                Argent -= 50;
-                lblArgent.Text = Argent.ToString();
-                btnPlusBle1.Enabled = false;
-                TimerBle1.Enabled = true;
-                btnBle1.BackgroundImage = ble;
-            }
+            
         }
 
         private void TimerBle1_Tick(object sender, EventArgs e)
@@ -125,6 +118,15 @@ namespace farmVilleV2
 
         private void btnBle1_Click(object sender, EventArgs e)
         {
+            if (Argent >= 50)
+            {
+                Argent -= 50;
+                lblArgent.Text = Argent.ToString();
+                btnPlusBle1.Enabled = false;
+                TimerBle1.Enabled = true;
+                btnBle1.BackgroundImage = ble;
+            }
+
             AjoutExp();
 
             Ble += 100;
