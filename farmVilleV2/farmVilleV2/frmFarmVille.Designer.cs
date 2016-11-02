@@ -54,7 +54,6 @@
             this.btnVendre100Ble = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.btnInventaire = new System.Windows.Forms.Button();
-            this.btnPlusBle3 = new System.Windows.Forms.Button();
             this.btnBle3 = new System.Windows.Forms.Button();
             this.btnBle2 = new System.Windows.Forms.Button();
             this.btnBle1 = new System.Windows.Forms.Button();
@@ -284,18 +283,6 @@
             this.btnInventaire.UseVisualStyleBackColor = true;
             this.btnInventaire.Click += new System.EventHandler(this.btnInventaire_Click);
             // 
-            // btnPlusBle3
-            // 
-            this.btnPlusBle3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPlusBle3.BackgroundImage")));
-            this.btnPlusBle3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPlusBle3.Location = new System.Drawing.Point(183, 13);
-            this.btnPlusBle3.Name = "btnPlusBle3";
-            this.btnPlusBle3.Size = new System.Drawing.Size(26, 23);
-            this.btnPlusBle3.TabIndex = 51;
-            this.btnPlusBle3.UseVisualStyleBackColor = true;
-            this.btnPlusBle3.Visible = false;
-            this.btnPlusBle3.Click += new System.EventHandler(this.btnPlusBle3_Click);
-            // 
             // btnBle3
             // 
             this.btnBle3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBle3.BackgroundImage")));
@@ -356,7 +343,6 @@
             this.Controls.Add(this.btnCheat);
             this.Controls.Add(this.tbxBle3);
             this.Controls.Add(this.lblDollarBle3);
-            this.Controls.Add(this.btnPlusBle3);
             this.Controls.Add(this.btnBle3);
             this.Controls.Add(this.btnAcheterTerrain1);
             this.Controls.Add(this.tbxBle2);
@@ -398,7 +384,6 @@
         private System.Windows.Forms.Button btnAcheterTerrain1;
         private System.Windows.Forms.TextBox tbxBle3;
         private System.Windows.Forms.Label lblDollarBle3;
-        private System.Windows.Forms.Button btnPlusBle3;
         private System.Windows.Forms.Button btnBle3;
         private System.Windows.Forms.Button btnCheat;
         private System.Windows.Forms.Timer TimerBle3;
