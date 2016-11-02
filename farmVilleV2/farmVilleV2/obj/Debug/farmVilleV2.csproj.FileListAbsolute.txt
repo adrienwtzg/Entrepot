@@ -19,3 +19,14 @@ C:\Users\Witziga\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\f
 C:\Users\Witziga\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.frmHangar.resources
 C:\Users\witziga_info\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.frmHangar.resources
 C:\Users\witziga_info\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.Inventaire.resources
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\bin\Debug\farmVilleV2.exe.config
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.exe
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.pdb
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\bin\Debug\farmVilleV2.exe
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\bin\Debug\farmVilleV2.pdb
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.csprojResolveAssemblyReference.cache
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.frmFarmVille.resources
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.frmHangar.resources
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.Inventaire.resources
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.Properties.Resources.resources
+C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.csproj.GenerateResource.Cache
