@@ -54,7 +54,6 @@
             this.btnVendre100Ble = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.btnInventaire = new System.Windows.Forms.Button();
-            this.btnBoutique = new System.Windows.Forms.Button();
             this.btnPlusBle3 = new System.Windows.Forms.Button();
             this.btnBle3 = new System.Windows.Forms.Button();
             this.btnPlusBle2 = new System.Windows.Forms.Button();
@@ -286,15 +285,6 @@
             this.btnInventaire.UseVisualStyleBackColor = true;
             this.btnInventaire.Click += new System.EventHandler(this.btnInventaire_Click);
             // 
-            // btnBoutique
-            // 
-            this.btnBoutique.Location = new System.Drawing.Point(284, 477);
-            this.btnBoutique.Name = "btnBoutique";
-            this.btnBoutique.Size = new System.Drawing.Size(172, 43);
-            this.btnBoutique.TabIndex = 63;
-            this.btnBoutique.Text = "Boutique";
-            this.btnBoutique.UseVisualStyleBackColor = true;
-            // 
             // btnPlusBle3
             // 
             this.btnPlusBle3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPlusBle3.BackgroundImage")));
@@ -368,7 +358,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 532);
-            this.Controls.Add(this.btnBoutique);
             this.Controls.Add(this.btnInventaire);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnVendre100Ble);
@@ -436,7 +425,6 @@
         private System.Windows.Forms.Button btnVendre100Ble;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnInventaire;
-        private System.Windows.Forms.Button btnBoutique;
     }
 }
 
