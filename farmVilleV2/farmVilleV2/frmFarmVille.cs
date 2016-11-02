@@ -125,11 +125,8 @@ namespace farmVilleV2
 
         private void btnBle1_Click(object sender, EventArgs e)
         {
-            pgbLevel.Step = 100;
-            pgbLevel.PerformStep();
-            pgbLevel.Step = 0;
-            VerifiePgbLevel();
-            
+            AjoutExp();
+
             Ble += 100;
             lblBle.Text = Ble.ToString();
             btnBle1.BackgroundImage = terre;
@@ -137,7 +134,6 @@ namespace farmVilleV2
             btnPlusBle1.Enabled = true;
             tbxBle1.Text = "";
         }
-
 
         // blé 2 ************************************************
 
@@ -169,10 +165,7 @@ namespace farmVilleV2
 
         private void btnBle2_Click(object sender, EventArgs e)
         {
-            pgbLevel.Step = 100;
-            pgbLevel.PerformStep();
-            pgbLevel.Step = 0;
-            VerifiePgbLevel();
+            AjoutExp();
 
             Ble += 100;
             lblBle.Text = Ble.ToString();
@@ -201,10 +194,7 @@ namespace farmVilleV2
 
         private void btnBle3_Click(object sender, EventArgs e)
         {
-            pgbLevel.Step = 100;
-            pgbLevel.PerformStep();
-            pgbLevel.Step = 0;
-            VerifiePgbLevel();
+            AjoutExp();
 
             Ble += 100;
             lblBle.Text = Ble.ToString();
@@ -245,6 +235,9 @@ namespace farmVilleV2
             Hangar.ShowDialog();
         }
 
+        /// <summary>
+        /// Verifie si la barre d'experience est au maximum, change les niveaux en fonction
+        /// </summary>
         private void VerifiePgbLevel()
         {
             if (pgbLevel.Value == pgbLevel.Maximum)
@@ -258,6 +251,17 @@ namespace farmVilleV2
             {
                 btnAcheterHangar.Enabled = true;
             }
+        }
+
+        /// <summary>
+        /// Ajoute de l'experience
+        /// </summary>
+        private void AjoutExp()
+        {
+            pgbLevel.Step = 100;
+            pgbLevel.PerformStep();
+            pgbLevel.Step = 0;
+            VerifiePgbLevel();
         }
 
         private void btnVendre100Ble_Click(object sender, EventArgs e)
