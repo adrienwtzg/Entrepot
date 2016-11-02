@@ -37,8 +37,7 @@ namespace farmVilleV2
         {
             
             //Bouton blé 1
-            btnBle1.Enabled = false;
-            btnPlusBle1.Enabled = true;
+            btnBle1.Enabled = true;
             tbxBle1.Text = "";
 
             //Bouton blé 2
@@ -104,6 +103,7 @@ namespace farmVilleV2
 
         private void TimerBle1_Tick(object sender, EventArgs e)
         {
+            ble1EnCours = true;
             RebourBle1 -= 1;
             tbxBle1.Text = RebourBle1.ToString() + " secondes";
             if(RebourBle1 < 1)
@@ -112,29 +112,36 @@ namespace farmVilleV2
                 TimerBle1.Enabled = false;
                 btnBle1.Enabled = true;
                 tbxBle1.Text = "Terminé";
-                
+                ble1Termine = true;
             }
         }
 
+        bool ble1EnCours = false, ble1Termine = false;
+
         private void btnBle1_Click(object sender, EventArgs e)
         {
-            if (Argent >= 50)
+            if ((Argent >= 50) && !ble1EnCours)
             {
                 Argent -= 50;
                 lblArgent.Text = Argent.ToString();
-                btnPlusBle1.Enabled = false;
+                btnBle1.Enabled = false;
                 TimerBle1.Enabled = true;
                 btnBle1.BackgroundImage = ble;
             }
 
-            AjoutExp();
+            if (ble1Termine)
+            {
+                AjoutExp();
 
-            Ble += 100;
-            lblBle.Text = Ble.ToString();
-            btnBle1.BackgroundImage = terre;
-            btnBle1.Enabled = false;
-            btnPlusBle1.Enabled = true;
-            tbxBle1.Text = "";
+                Ble += 100;
+                lblBle.Text = Ble.ToString();
+                btnBle1.BackgroundImage = terre;
+                btnBle1.Enabled = true;
+                tbxBle1.Text = "";
+                ble1Termine = false;
+                ble1EnCours = false;
+            }
+            
         }
 
         // blé 2 ************************************************

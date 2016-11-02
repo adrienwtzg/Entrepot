@@ -58,7 +58,6 @@
             this.btnBle3 = new System.Windows.Forms.Button();
             this.btnPlusBle2 = new System.Windows.Forms.Button();
             this.btnBle2 = new System.Windows.Forms.Button();
-            this.btnPlusBle1 = new System.Windows.Forms.Button();
             this.btnBle1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -331,17 +330,6 @@
             this.btnBle2.UseVisualStyleBackColor = true;
             this.btnBle2.Click += new System.EventHandler(this.btnBle2_Click);
             // 
-            // btnPlusBle1
-            // 
-            this.btnPlusBle1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPlusBle1.BackgroundImage")));
-            this.btnPlusBle1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPlusBle1.Location = new System.Drawing.Point(11, 12);
-            this.btnPlusBle1.Name = "btnPlusBle1";
-            this.btnPlusBle1.Size = new System.Drawing.Size(26, 23);
-            this.btnPlusBle1.TabIndex = 41;
-            this.btnPlusBle1.UseVisualStyleBackColor = true;
-            this.btnPlusBle1.Click += new System.EventHandler(this.btnPlusBle1_Click);
-            // 
             // btnBle1
             // 
             this.btnBle1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBle1.BackgroundImage")));
@@ -378,7 +366,6 @@
             this.Controls.Add(this.btnAcheterHangar);
             this.Controls.Add(this.tbxBle1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnPlusBle1);
             this.Controls.Add(this.btnBle1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lblBle);
@@ -402,7 +389,6 @@
         private System.Windows.Forms.Label lblArgent;
         private System.Windows.Forms.TextBox tbxBle1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnPlusBle1;
         private System.Windows.Forms.Button btnBle1;
         private System.Windows.Forms.Timer TimerBle1;
         private System.Windows.Forms.Button btnAcheterHangar;
