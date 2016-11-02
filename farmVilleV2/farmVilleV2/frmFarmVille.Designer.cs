@@ -56,7 +56,6 @@
             this.btnInventaire = new System.Windows.Forms.Button();
             this.btnPlusBle3 = new System.Windows.Forms.Button();
             this.btnBle3 = new System.Windows.Forms.Button();
-            this.btnPlusBle2 = new System.Windows.Forms.Button();
             this.btnBle2 = new System.Windows.Forms.Button();
             this.btnBle1 = new System.Windows.Forms.Button();
             this.CheatOuvrirHangar = new System.Windows.Forms.Button();
@@ -309,17 +308,6 @@
             this.btnBle3.Visible = false;
             this.btnBle3.Click += new System.EventHandler(this.btnBle3_Click);
             // 
-            // btnPlusBle2
-            // 
-            this.btnPlusBle2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPlusBle2.BackgroundImage")));
-            this.btnPlusBle2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPlusBle2.Location = new System.Drawing.Point(97, 13);
-            this.btnPlusBle2.Name = "btnPlusBle2";
-            this.btnPlusBle2.Size = new System.Drawing.Size(26, 23);
-            this.btnPlusBle2.TabIndex = 46;
-            this.btnPlusBle2.UseVisualStyleBackColor = true;
-            this.btnPlusBle2.Click += new System.EventHandler(this.btnPlusBle2_Click);
-            // 
             // btnBle2
             // 
             this.btnBle2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBle2.BackgroundImage")));
@@ -373,7 +361,6 @@
             this.Controls.Add(this.btnAcheterTerrain1);
             this.Controls.Add(this.tbxBle2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnPlusBle2);
             this.Controls.Add(this.btnBle2);
             this.Controls.Add(this.btnAcheterHangar);
             this.Controls.Add(this.tbxBle1);
@@ -406,7 +393,6 @@
         private System.Windows.Forms.Button btnAcheterHangar;
         private System.Windows.Forms.TextBox tbxBle2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnPlusBle2;
         private System.Windows.Forms.Button btnBle2;
         private System.Windows.Forms.Timer TimerBle2;
         private System.Windows.Forms.Button btnAcheterTerrain1;

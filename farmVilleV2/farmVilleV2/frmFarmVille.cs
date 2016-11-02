@@ -41,8 +41,7 @@ namespace farmVilleV2
             tbxBle1.Text = "";
 
             //Bouton blé 2
-            btnBle2.Enabled = false;
-            btnPlusBle2.Enabled = true;
+            btnBle2.Enabled = true;
             tbxBle2.Text = "";
 
             //Bouton blé 3
@@ -96,11 +95,6 @@ namespace farmVilleV2
 
         // Blé 1**************************************************
 
-        private void btnPlusBle1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void TimerBle1_Tick(object sender, EventArgs e)
         {
             ble1EnCours = true;
@@ -117,6 +111,7 @@ namespace farmVilleV2
         }
 
         bool ble1EnCours = false, ble1Termine = false;
+        bool ble2EnCours = false, ble2Termine = false;
 
         private void btnBle1_Click(object sender, EventArgs e)
         {
@@ -148,18 +143,12 @@ namespace farmVilleV2
 
         private void btnPlusBle2_Click(object sender, EventArgs e)
         {
-            if (Argent >= 50)
-            {
-                Argent -= 50;
-                lblArgent.Text = Argent.ToString();
-                btnPlusBle2.Enabled = false;
-                TimerBle2.Enabled = true;
-                btnBle2.BackgroundImage = ble;
-            }
+            
         }
 
         private void TimerBle2_Tick(object sender, EventArgs e)
         {
+            ble2EnCours = true;
             RebourBle2 -= 1;
             tbxBle2.Text = RebourBle2.ToString() + " secondes";
             if (RebourBle2 < 1)
@@ -168,21 +157,34 @@ namespace farmVilleV2
                 TimerBle2.Enabled = false;
                 btnBle2.Enabled = true;
                 tbxBle2.Text = "Terminé";
-
+                ble2Termine = true;
             }
         }
 
         private void btnBle2_Click(object sender, EventArgs e)
         {
-            AjoutExp();
+            if ((Argent >= 50) && !ble2EnCours)
+            {
+                Argent -= 50;
+                lblArgent.Text = Argent.ToString();
+                btnBle2.Enabled = false;
+                TimerBle2.Enabled = true;
+                btnBle2.BackgroundImage = ble;
+            }
 
-            Ble += 100;
-            lblBle.Text = Ble.ToString();
-            pgbLevel.PerformStep();
-            btnBle2.BackgroundImage = terre;
-            btnBle2.Enabled = false;
-            btnPlusBle2.Enabled = true;
-            tbxBle2.Text = "";
+            if (ble2Termine)
+            {
+                AjoutExp();
+
+                Ble += 100;
+                lblBle.Text = Ble.ToString();
+                pgbLevel.PerformStep();
+                btnBle2.BackgroundImage = terre;
+                btnBle2.Enabled = true;
+                tbxBle2.Text = "";
+                ble2EnCours = false;
+                ble2Termine = false;
+            }
         }
 
 
