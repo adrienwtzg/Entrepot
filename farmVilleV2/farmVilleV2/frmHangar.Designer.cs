@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(88, 238);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 136);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Acheter 200 Plants";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmHangar
             // 
@@ -37,6 +47,7 @@
             this.BackgroundImage = global::farmVilleV2.Properties.Resources.ImageHangar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(765, 532);
+            this.Controls.Add(this.button1);
             this.Name = "frmHangar";
             this.Text = "Hangar";
             this.ResumeLayout(false);
@@ -44,5 +55,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
     }
 }
