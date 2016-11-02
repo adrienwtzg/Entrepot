@@ -1,0 +1,9 @@
+C:\Users\WITZIGA_INFO\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\bin\Debug\farmVilleV2.exe.config
+C:\Users\WITZIGA_INFO\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\bin\Debug\farmVilleV2.exe
+C:\Users\WITZIGA_INFO\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\bin\Debug\farmVilleV2.pdb
+C:\Users\WITZIGA_INFO\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.csprojResolveAssemblyReference.cache
+C:\Users\WITZIGA_INFO\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.frmFarmVille.resources
+C:\Users\WITZIGA_INFO\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.Properties.Resources.resources
+C:\Users\WITZIGA_INFO\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.csproj.GenerateResource.Cache
+C:\Users\WITZIGA_INFO\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.exe
+C:\Users\WITZIGA_INFO\Documents\Visual Studio 2013\Projects\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.pdb
