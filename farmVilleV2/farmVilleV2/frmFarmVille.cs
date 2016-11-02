@@ -74,11 +74,12 @@ namespace farmVilleV2
             {
                 terrain1Acheter = true;
                 Argent -= 500;
-                lblArgent.Text = Argent.ToString();
                 btnBle3.Visible = true;
                 tbxBle3.Visible = true;
                 lblDollarBle3.Visible = true;
                 btnAcheterTerrain1.Dispose();
+
+                Affichage();
             }
 
         }
@@ -86,7 +87,7 @@ namespace farmVilleV2
         private void btnCheat_Click(object sender, EventArgs e)
         {
             Argent += 1000;
-            lblArgent.Text = Argent.ToString();
+            Affichage();
             for (int i = 0; i < 50; i++)
             {
                 pgbLevel.PerformStep();
@@ -119,7 +120,6 @@ namespace farmVilleV2
             if ((Argent >= 50) && !ble1EnCours)
             {
                 Argent -= 50;
-                lblArgent.Text = Argent.ToString();
                 btnBle1.Enabled = false;
                 TimerBle1.Enabled = true;
                 btnBle1.BackgroundImage = ble;
@@ -130,14 +130,14 @@ namespace farmVilleV2
                 AjoutExp();
 
                 Ble += 100;
-                lblBle.Text = Ble.ToString();
                 btnBle1.BackgroundImage = terre;
                 btnBle1.Enabled = true;
                 tbxBle1.Text = "";
                 ble1Termine = false;
                 ble1EnCours = false;
             }
-            
+
+            Affichage();
         }
 
         // blé 2 ************************************************
@@ -163,7 +163,6 @@ namespace farmVilleV2
             if ((Argent >= 50) && !ble2EnCours)
             {
                 Argent -= 50;
-                lblArgent.Text = Argent.ToString();
                 btnBle2.Enabled = false;
                 TimerBle2.Enabled = true;
                 btnBle2.BackgroundImage = ble;
@@ -174,7 +173,6 @@ namespace farmVilleV2
                 AjoutExp();
 
                 Ble += 100;
-                lblBle.Text = Ble.ToString();
                 pgbLevel.PerformStep();
                 btnBle2.BackgroundImage = terre;
                 btnBle2.Enabled = true;
@@ -182,6 +180,8 @@ namespace farmVilleV2
                 ble2EnCours = false;
                 ble2Termine = false;
             }
+
+            Affichage();
         }
 
 
@@ -207,7 +207,6 @@ namespace farmVilleV2
             if ((Argent >= 50) && !ble3EnCours)
             {
                 Argent -= 50;
-                lblArgent.Text = Argent.ToString();
                 btnBle3.Enabled = false;
                 TimerBle3.Enabled = true;
                 btnBle3.BackgroundImage = ble;
@@ -218,7 +217,6 @@ namespace farmVilleV2
                 AjoutExp();
 
                 Ble += 100;
-                lblBle.Text = Ble.ToString();
                 pgbLevel.PerformStep();
                 btnBle3.BackgroundImage = terre;
                 btnBle3.Enabled = true;
@@ -226,6 +224,8 @@ namespace farmVilleV2
                 ble3EnCours = false;
                 ble3Termine = false;
             }
+
+            Affichage();
         }
 
 
@@ -272,6 +272,13 @@ namespace farmVilleV2
             pgbLevel.PerformStep();
             pgbLevel.Step = 0;
             VerifiePgbLevel();
+        }
+
+
+        private void Affichage()
+        {
+            lblArgent.Text = Argent.ToString();
+            lblBle.Text = Ble.ToString();
         }
 
         private void btnVendre100Ble_Click(object sender, EventArgs e)
