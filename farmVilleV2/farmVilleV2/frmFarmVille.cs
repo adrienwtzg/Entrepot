@@ -63,12 +63,16 @@ namespace farmVilleV2
         private void tbxBle3_TextChanged(object sender, EventArgs e)
         {
 
-        } 
+        }
+
+
+        bool ter1Acheter = false;
 
         private void btnAcheterTerrain1_Click(object sender, EventArgs e)
         {
-            if (Argent >= 500)
+            if ((Argent >= 500) && !ter1Acheter)
             {
+                ter1Acheter = true;
                 Argent -= 500;
                 lblArgent.Text = Argent.ToString();
                 btnBle3.Visible = true;
@@ -181,6 +185,7 @@ namespace farmVilleV2
 
 
         //Blé 3 **************************************************
+        
 
         private void btnPlusBle3_Click(object sender, EventArgs e)
         {
@@ -268,7 +273,7 @@ namespace farmVilleV2
 
         private void btnInventaire_Click(object sender, EventArgs e)
         {
-            Inventaire.Show();
+            Inventaire.ShowDialog();
         }
     }
 }
