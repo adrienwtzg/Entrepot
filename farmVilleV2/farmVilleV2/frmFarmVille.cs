@@ -83,6 +83,11 @@ namespace farmVilleV2
         {
             Argent += 1000;
             lblArgent.Text = Argent.ToString();
+            for (int i = 0; i < 50; i++)
+            {
+                pgbLevel.PerformStep();
+                VerifiePgbLevel();
+            }
         }
 
 
