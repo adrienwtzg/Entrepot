@@ -26,6 +26,10 @@ namespace farmVilleV2
         public int LevelExp = 5;
         frmHangar Hangar = new frmHangar();
         Inventaire Inventaire = new Inventaire();
+
+        bool ble1EnCours = false, ble1Termine = false;
+        bool ble2EnCours = false, ble2Termine = false;
+        bool ble3EnCours = false, ble3Termine = false;
         
 
         public frmFarmVille()
@@ -63,13 +67,13 @@ namespace farmVilleV2
         }
 
 
-        bool ter1Acheter = false;
+        bool terrain1Acheter = false;
 
         private void btnAcheterTerrain1_Click(object sender, EventArgs e)
         {
-            if ((Argent >= 500) && !ter1Acheter)
+            if ((Argent >= 500) && !terrain1Acheter)
             {
-                ter1Acheter = true;
+                terrain1Acheter = true;
                 Argent -= 500;
                 lblArgent.Text = Argent.ToString();
                 btnBle3.Visible = true;
@@ -107,10 +111,6 @@ namespace farmVilleV2
                 ble1Termine = true;
             }
         }
-
-        bool ble1EnCours = false, ble1Termine = false;
-        bool ble2EnCours = false, ble2Termine = false;
-        bool ble3EnCours = false, ble3Termine = false;
 
         private void btnBle1_Click(object sender, EventArgs e)
         {
@@ -183,11 +183,20 @@ namespace farmVilleV2
 
 
         //Blé 3 **************************************************
-        
 
-        private void btnPlusBle3_Click(object sender, EventArgs e)
+        private void TimerBle3_Tick(object sender, EventArgs e)
         {
-            
+            ble3EnCours = true;
+            RebourBle3 -= 1;
+            tbxBle3.Text = RebourBle2.ToString() + " secondes";
+            if (RebourBle3 < 1)
+            {
+                RebourBle3 = 11;
+                TimerBle3.Enabled = false;
+                btnBle3.Enabled = true;
+                tbxBle3.Text = "Terminé";
+                ble3Termine = true;
+            }
         }
 
         private void btnBle3_Click(object sender, EventArgs e)
@@ -216,20 +225,6 @@ namespace farmVilleV2
             }
         }
 
-        private void TimerBle3_Tick(object sender, EventArgs e)
-        {
-            ble3EnCours = true;
-            RebourBle3 -= 1;
-            tbxBle3.Text = RebourBle2.ToString() + " secondes";
-            if (RebourBle3 < 1)
-            {
-                RebourBle3 = 11;
-                TimerBle3.Enabled = false;
-                btnBle3.Enabled = true;
-                tbxBle3.Text = "Terminé";
-                ble3Termine = true;
-            }
-        }
 
         private void btnAcheterHangar_Click(object sender, EventArgs e)
         {
