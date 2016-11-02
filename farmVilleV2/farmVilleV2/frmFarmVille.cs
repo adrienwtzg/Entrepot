@@ -23,7 +23,7 @@ namespace farmVilleV2
         public int RebourBle2 = 11;
         public int RebourBle3 = 11;
         public int MaxExp = 500;
-        public int LevelExp = 1;
+        public int LevelExp = 5;
         frmHangar Hangar = new frmHangar();
         Inventaire Inventaire = new Inventaire();
         
@@ -232,7 +232,7 @@ namespace farmVilleV2
 
         private void btnOuvrirHangar_Click(object sender, EventArgs e)
         {
-            Hangar.Show();
+            Hangar.ShowDialog();
         }
 
         private void VerifiePgbLevel()

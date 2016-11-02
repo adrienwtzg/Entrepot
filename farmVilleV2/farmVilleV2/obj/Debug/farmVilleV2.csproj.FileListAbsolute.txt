@@ -33,3 +33,11 @@ C:\Users\witziga_info\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debu
 C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\bin\Debug\farmVilleV2.exe.config
 C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.exe
 C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.pdb
+C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\bin\Debug\farmVilleV2.exe
+C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\bin\Debug\farmVilleV2.pdb
+C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.csprojResolveAssemblyReference.cache
+C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.frmFarmVille.resources
+C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.frmHangar.resources
+C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.Inventaire.resources
+C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.Properties.Resources.resources
+C:\Users\DONATIL_INFO\Documents\GitHub\Entrepot\farmVilleV2\farmVilleV2\obj\Debug\farmVilleV2.csproj.GenerateResource.Cache
