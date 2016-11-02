@@ -31,6 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnMarchandArme = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -60,6 +61,15 @@
             this.button3.Text = "Acheter 1000 plants";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // btnMarchandArme
+            // 
+            this.btnMarchandArme.Location = new System.Drawing.Point(12, 12);
+            this.btnMarchandArme.Name = "btnMarchandArme";
+            this.btnMarchandArme.Size = new System.Drawing.Size(131, 35);
+            this.btnMarchandArme.TabIndex = 3;
+            this.btnMarchandArme.Text = "Marchand Armes";
+            this.btnMarchandArme.UseVisualStyleBackColor = true;
+            // 
             // frmHangar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -67,6 +77,7 @@
             this.BackgroundImage = global::farmVilleV2.Properties.Resources.ImageHangar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(765, 532);
+            this.Controls.Add(this.btnMarchandArme);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -81,6 +92,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnMarchandArme;
 
     }
 }
