@@ -64,7 +64,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(576, 41);
+            this.label13.Location = new System.Drawing.Point(548, 41);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(45, 20);
             this.label13.TabIndex = 39;
@@ -94,7 +94,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(576, 9);
+            this.label1.Location = new System.Drawing.Point(548, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 36;
@@ -102,13 +102,13 @@
             // 
             // lblArgent
             // 
-            this.lblArgent.AutoSize = true;
             this.lblArgent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArgent.Location = new System.Drawing.Point(689, 10);
+            this.lblArgent.Location = new System.Drawing.Point(617, 10);
             this.lblArgent.Name = "lblArgent";
-            this.lblArgent.Size = new System.Drawing.Size(39, 20);
+            this.lblArgent.Size = new System.Drawing.Size(111, 20);
             this.lblArgent.TabIndex = 35;
             this.lblArgent.Text = "200";
+            this.lblArgent.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tbxBle1
             // 
