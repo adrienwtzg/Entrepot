@@ -290,5 +290,10 @@ namespace farmVilleV2
         {
             Inventaire.ShowDialog();
         }
+
+        private void CheatOuvrirHangar_Click(object sender, EventArgs e)
+        {
+            Hangar.ShowDialog();
+        }
     }
 }
