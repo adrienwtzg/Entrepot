@@ -59,6 +59,7 @@
             this.btnPlusBle2 = new System.Windows.Forms.Button();
             this.btnBle2 = new System.Windows.Forms.Button();
             this.btnBle1 = new System.Windows.Forms.Button();
+            this.CheatOuvrirHangar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label13
@@ -341,11 +342,22 @@
             this.btnBle1.UseVisualStyleBackColor = true;
             this.btnBle1.Click += new System.EventHandler(this.btnBle1_Click);
             // 
+            // CheatOuvrirHangar
+            // 
+            this.CheatOuvrirHangar.Location = new System.Drawing.Point(580, 497);
+            this.CheatOuvrirHangar.Name = "CheatOuvrirHangar";
+            this.CheatOuvrirHangar.Size = new System.Drawing.Size(91, 23);
+            this.CheatOuvrirHangar.TabIndex = 63;
+            this.CheatOuvrirHangar.Text = "Cheat Hangar";
+            this.CheatOuvrirHangar.UseVisualStyleBackColor = true;
+            this.CheatOuvrirHangar.Click += new System.EventHandler(this.CheatOuvrirHangar_Click);
+            // 
             // frmFarmVille
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 532);
+            this.Controls.Add(this.CheatOuvrirHangar);
             this.Controls.Add(this.btnInventaire);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnVendre100Ble);
@@ -411,6 +423,7 @@
         private System.Windows.Forms.Button btnVendre100Ble;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnInventaire;
+        private System.Windows.Forms.Button CheatOuvrirHangar;
     }
 }
 
