@@ -273,7 +273,7 @@ namespace farmVilleV2
 
         private void btnInventaire_Click(object sender, EventArgs e)
         {
-            Inventaire.Show();
+            Inventaire.ShowDialog();
         }
     }
 }
