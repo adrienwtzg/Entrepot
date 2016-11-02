@@ -23,7 +23,7 @@ namespace farmVilleV2
         public int RebourBle2 = 10;
         public int RebourBle3 = 10;
         public int MaxExp = 500;
-        public int LevelExp = 5;
+        public int LevelExp = 1;
         frmHangar Hangar = new frmHangar();
         Inventaire Inventaire = new Inventaire();
 
